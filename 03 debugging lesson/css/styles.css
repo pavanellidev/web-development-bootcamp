@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+   background-color: #f0f8ff;
+}
+
+hr {
+   border-color: #bbbbbb;
+   border-width: 4px;
+   border-style: none;
+   border-top-style: dotted;
+   width: 2%;
+}
+
+h1 {
+   color: #4f8b8b;
+}
+
+h3 {
+   color: #61afaf;
+}
