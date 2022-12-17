@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Js exercise</title>
+
+   <script>
+
+   function getMilk(money) {   
+   console.log("leaveHouse");
+   console.log("moveRight");
+   console.log("moveRight");
+   console.log("moveUp");
+   console.log("moveUp");
+   console.log("moveUp");
+   console.log("moveUp");
+   console.log("moveRight");
+   console.log("moveRight");
+
+   console.log("buy " + calcBottles(money, 1.5) + " bottles of milk");
+
+   console.log("moveLeft");
+   console.log("moveLeft");
+   console.log("moveDown");
+   console.log("moveDown");
+   console.log("moveDown");
+   console.log("moveDown");
+   console.log("moveLeft");
+   console.log("moveLeft");
+   console.log("enterHouse");
+
+   return calcChange(money, 1.5); 
+   }
+
+   function calcBottles(startingMoney, costPerBottle) {
+
+   var numberOfBottles = Math.floor(startingMoney / costPerBottle);
+
+   return numberOfBottles;
+   }
+
+   function calcChange(startingAmount, costPerBottle) {
+      var change = startingAmount % costPerBottle;
+      return change;
+   }
+
+   console.log("Hello, here is your " + getMilk(5) + " change.");
+
+   </script>
+
+</head>
+<body>
+   <h1>Js Exercise</h1>
+</body>
+
+</html>
